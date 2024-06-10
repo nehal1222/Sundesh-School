@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From the Manager's Desk</title>
+    <style>
+        * {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+        }
+        .heading-container {
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 3s;
+        }
+        .heading {
+            font-weight: 500;
+            font-size: 60px;
+            color: green;
+            background-color: #96bc95;
+            padding: 20px 0;
+        }
+        .dropone {
+            background: linear-gradient(45deg, #f5d4a7, #f5a623);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .main{
+            background-color: rgb(rgb(192, 200, 203));
+        }
+        .photo {
+            margin-left: -88px;
+            text-align: center;
+            margin-right: 74px;
+        }
+        .photo img {
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        .photo p {
+            margin-top: 10px;
+            font-weight: bolder;
+        }
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(5, 1, 1, 0.915);
+        }
+        .content h4 {
+            color: black;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading-container">
+            <div class="heading"><i>From the Manager's Desk</i></div>
+        </div>
+        <div class="dropone">
+            <div class="photo">
+                <img src="/assets/maam.jpg" alt="Mrs Poonam Parihar" />
+                <p>Mrs Poonam Parihar</p>
+            </div>
+            <div class="content">
+                <h4>
+                    <i>
+                        "The greatest gift to life on Earth is trees. The idea that trees
+                        behave as carbon sinks by storing carbon dioxide in their roots,
+                        woods, and leaves has already been discussed, but I want to
+                        emphasise it. This carbon is not as abundant in our climate, which
+                        has the potential to destroy it. A tree can generate wind. When
+                        the weather is chilly and windy, the trees planted around the edge
+                        operate as windbreakers. The roots of the trees protect the soil,
+                        while their leaves break the force of the wind and lessen the
+                        effect of rain on the ground. As a result, trees deal with soil
+                        erosion, capture rainwater, and monitor stormwater flow and
+                        sediment accumulation. In the end, I want to say that trees are
+                        excellent for people and that they are the natural guardians of
+                        people. They feed us, and our lives are sustained."
+                    </i>
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

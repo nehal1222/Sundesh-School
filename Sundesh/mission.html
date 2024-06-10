@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        section {
+            display: flex;
+            background: linear-gradient(45deg, rgb(72, 130, 25), transparent);
+        }
+        .main {
+            background: linear-gradient(290deg, #f8b227dd, transparent);
+            background-repeat: no-repeat;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+            width: 100%;
+            height: 600px;
+        }
+        .heading-container {
+            width: 100%;
+            text-align: center;
+            animation: fadeInSep 3s;
+            background-color: aliceblue;
+        }
+        .heading {
+            font-weight: 500;
+            font-size: 60px;
+            color: green;
+            animation: fadeIn 3s;
+
+        }
+        .cards {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1000px;
+            margin: 10vh auto;
+            padding: 70px;
+            overflow-x: auto;
+        }
+        .card {
+            border-radius: 16px;
+            box-shadow: 0 0px 0px 0px;
+            max-width: 100%;
+            height: 200px;
+            border: 5px solid black;
+            flex: 0 0 auto;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0px 30px 30px -25px rgba(218, 116, 7, 0.903);
+            transform: scale(1.2);
+        }
+        .information {
+            background-color: transparent;
+            padding: 1.5rem;
+            font-size: 25px;
+            font-family: 'Monserrat', sans-serif;
+        }
+        .info {
+            color: rgb(13, 53, 52);
+        }
+        .info + * {
+            margin-top: 1.25rem;
+        }
+        .title1 {
+            font-size: 1.5rem;
+            color: black;
+            line-height: 1.25;
+        }
+        .title1 + * {
+            margin-top: 1rem;
+        }
+        .vision {
+            border: 30px solid;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="heading-container">
+                <div class="heading">Our Mission</div>
+                <div class="separation1"></div>
+            </div>
+            <div class="cards">
+                <article class="information card">
+                    <p class="info">"Empowering young minds to shape a brighter tomorrow"</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="main">
+            <div class="heading-container">
+                <div class="heading">Our Vision</div>
+                <div class="separation1"></div>
+            </div>
+            <div class="cards">
+                <article class="information card">
+                    <p class="info">"Nurturing curious minds to reach their full potential"</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From the Manager's Desk</title>
+    <style>
+        * {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+        }
+        body {
+            background-color: #f5f5f5; /* Light grey background for the body */
+        }
+        .heading-container {
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 3s;
+            background-color: #d1e7dd; /* Light green background for the heading container */
+            padding: 20px 0;
+        }
+        .heading {
+            font-weight: 500;
+            font-size: 60px;
+            color: green;
+            background-color: #96bc95;
+            padding: 20px 0;
+            border: 2px solid black; /* Added border to heading */
+        }
+        .dropone {
+            background: linear-gradient(45deg, #FFBF78, #f5a623);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border: 2px solid black; /* Added border to dropone */
+        }
+        .photo {
+            margin-right: 20px;
+            text-align: center;
+        }
+        .photo img {
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+        }
+        .photo p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+        }
+        .content h4 {
+            color: black;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Nested dropdown styles */
+        .dropdown-content .nested-dropdown {
+            position: relative;
+        }
+        .nested-dropdown-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .nested-dropdown:hover .nested-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading-container">
+            <div class="heading"><i>From the Manager's Desk</i></div>
+        </div>
+        <div class="dropone">
+            <div class="photo">
+                <img src="/assets/maam.jpg" alt="Mrs Poonam Parihar" />
+                <p>Mrs Poonam Parihar</p>
+            </div>
+            <div class="content">
+                <h4>
+                    <i>
+                        "The greatest gift to life on Earth is trees. The idea that trees
+                        behave as carbon sinks by storing carbon dioxide in their roots,
+                        woods, and leaves has already been discussed, but I want to
+                        emphasise it. This carbon is not as abundant in our climate, which
+                        has the potential to destroy it. A tree can generate wind. When
+                        the weather is chilly and windy, the trees planted around the edge
+                        operate as windbreakers. The roots of the trees protect the soil,
+                        while their leaves break the force of the wind and lessen the
+                        effect of rain on the ground. As a result, trees deal with soil
+                        erosion, capture rainwater, and monitor stormwater flow and
+                        sediment accumulation. In the end, I want to say that trees are
+                        excellent for people and that they are the natural guardians of
+                        people. They feed us, and our lives are sustained."
+                    </i>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <div class="nested-dropdown">
+                <a href="#">Link 3</a>
+                <div class="nested-dropdown-content">
+                    <a href="#">Sublink 3.1</a>
+                    <a href="#">Sublink 3.2</a>
+                    <a href="#">Sublink 3.3</a>
+                </div>
+            </div>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+</body>
+</html>

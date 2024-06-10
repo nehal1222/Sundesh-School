@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background: linear-gradient(90deg, rgba(75, 220, 72, 0.45), transparent);
+            background-repeat: no-repeat;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            height: 600px;
+        }
+        .heading-container {
+            width: 100%;
+            text-align: center;
+            /* animation: fadeIn 5s; */
+            animation: fadeInSep 3s;
+
+        }
+        .heading {
+            font-weight: 500;
+            font-size: 60px;
+            color: green;
+            animation: fadeIn 3s;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .topic1 {
+            text-align: left;
+            margin-left: 150px;
+            font-weight: 500;
+            font-size: 30px;
+            color: #1FAB89;
+            animation: fadeIn 3s;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeInSep {
+            0% { opacity: 0; }
+            25% { opacity: 0.25;}
+            50% { opacity: 0.5;}
+            100% { opacity: 1; }
+        }
+        .flip-cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 250px;
+            height: 250px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            box-shadow: blue;
+        }
+        .flip-card-front img {
+            width: 100%;
+            height: 100%;
+        }
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        .flip-card-back {
+            background-color: #7ABA78;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        /* .separation1 {
+            background-color: #7FC8A9;
+            height: 3px;
+            width: 30%;
+            align-items: center;
+            margin-left: 420px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        } */
+        .separation2 {
+            background-color: #7FC8A9;
+            height: 0.5px;
+            margin-top: 10px;
+            margin-left: 100px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading-container">
+            <div class="heading">Newsletter</div>
+            <div class="separation1"></div>
+            <div class="topic1">Summer Camp</div>
+            <div class="separation2"></div>
+        </div>
+        <div class="flip-cards-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/news1.jpg" alt="News 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>SUMMER CAMP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/news2.jpg" alt="News 2">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>SUMMER CAMP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/news3.jpg" alt="News 3">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>SUMMER CAMP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/news4.jpg" alt="News 4">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>SUMMER CAMP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
